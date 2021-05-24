@@ -57,6 +57,8 @@
     <form method="POST" action="post.php">
         <input type="text" name="name" id="nameinput" required />
         <input type="submit">
+        <br>
+        <span class="name-aldaa"></span>
     </form>
 </body>
 </html>

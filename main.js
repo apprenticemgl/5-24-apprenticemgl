@@ -42,17 +42,27 @@ $(document).ready(function(){
 
 		if(username == '') {
 			// alert('ner xooson baina');
-			$("#the-child").html('ner xooson baina');
-			$("#the-child").css('color', 'red');
+			$(".name-aldaa").html('ner xooson baina');
+			$(".name-aldaa").css('color', 'red');
 			return;
 		}
 
-		$("#the-child").html('');
-		$("#the-child").css('color', 'black');
+		$(".name-aldaa").html('');
+		$(".name-aldaa").css('color', 'black');
 
 		var data = {name: username};
 		$.post("post.php", data,
 			function(data, status){
+				if(data == 'yes') {
+					// bolson
+					console.log('bolsooon');
+
+					$(".name-aldaa").html('bolchlooshuu naizaa');
+					$(".name-aldaa").css('color', 'green');
+				} else {
+					// boloogui
+					console.log('boloogui ee, yu bolchixvooo');
+				}
 				console.log("Data: " + data + "\nStatus: " + status);
 
 				$("#nameinput").val("");
