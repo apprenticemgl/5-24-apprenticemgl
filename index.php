@@ -54,5 +54,9 @@
     }
     xoyorVariable(1,2);    
     ?>
+    <form method="POST" action="post.php">
+        <input type="text" name="name" required />
+        <input type="submit">
+    </form>
 </body>
 </html>

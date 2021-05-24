@@ -20,10 +20,22 @@ $(document).ready(function(){
 	);
 
 	$('.btn-dark').click(function(){
-		$('p#the-child').slideDown();
+		$('p#the-child').animate({
+			position: 'absolute',
+			display: 'block',
+			opacity: 0.5,
+			'margin-top': '150px'
+		});
 	});
 
-	console.log('query document ready');
+	// console.log('query document ready');
+
+	$(".btn-link").click(function(){
+		$.get("data.txt", function(data, status){
+			alert("Data: " + data + "\nStatus: " + status);
+		});
+	});
+
 });
 
 function pthechildDaragdsan() {
