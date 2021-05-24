@@ -1,26 +1,28 @@
 /* 5/24 class */
-jQuery(document).ready(function(){
-	// jQuery("p").click(function(){
-	// 	jQuery(this).hide();
+
+$(document).ready(function(){
+	// $("p").click(function(){
+	// 	$(this).hide();
 	// });
 
-	jQuery("p#the-child").click(
+	$("p#the-child").click(
 		function(){
-			// if(!jQuery(this).hasClass('daragdsan')) {
-			// 	jQuery(this).addClass('daragdsan');
+			// if(!$(this).hasClass('daragdsan')) {
+			// 	$(this).addClass('daragdsan');
 			// } else {
-			// 	jQuery(this).removeClass('daragdsan');
+			// 	$(this).removeClass('daragdsan');
 			// }
 
-			jQuery(this).toggleClass('daragdsan');
-			// jQuery(this).fadeToggle();
-			jQuery(this).slideToggle();
+			$(this).toggleClass('daragdsan');
+			// $(this).fadeToggle();
+			$(this).slideToggle();
 		}
 	);
 
-	jQuery('.btn-dark').click(function(){
-		jQuery('p#the-child').slideDown();
+	$('.btn-dark').click(function(){
+		$('p#the-child').slideDown();
 	});
+
 	console.log('query document ready');
 });
 
