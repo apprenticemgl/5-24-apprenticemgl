@@ -6,11 +6,14 @@ jQuery(document).ready(function(){
 
 	jQuery("p#the-child").click(
 		function(){
-			if(jQuery(this).hasClass('daragsan')) {
-				jQuery(this).removeClass('daragdsan');
-			} else {
-				jQuery(this).addClass('daragdsan');
-			}
+			// if(!jQuery(this).hasClass('daragdsan')) {
+			// 	jQuery(this).addClass('daragdsan');
+			// } else {
+			// 	jQuery(this).removeClass('daragdsan');
+			// }
+
+			jQuery(this).toggleClass('daragdsan');
+			jQuery(this).fadeToggle();
 		}
 	);
 	console.log('query document ready');

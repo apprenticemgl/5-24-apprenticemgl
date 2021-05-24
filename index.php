@@ -35,6 +35,10 @@
     p#the-child {
         display: block !important;
     }
+    p.daragdsan {
+        background-color: green;
+        color: white;
+    }
     </style>
     <script src="jquery.js"></script>
     <script src="main.js"></script>
