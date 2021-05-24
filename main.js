@@ -13,9 +13,14 @@ jQuery(document).ready(function(){
 			// }
 
 			jQuery(this).toggleClass('daragdsan');
-			jQuery(this).fadeToggle();
+			// jQuery(this).fadeToggle();
+			jQuery(this).slideToggle();
 		}
 	);
+
+	jQuery('.btn-dark').click(function(){
+		jQuery('p#the-child').slideDown();
+	});
 	console.log('query document ready');
 });
 

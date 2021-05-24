@@ -33,7 +33,7 @@
     <style>
     /* css ornoo = cascading STYLE sheet*/
     p#the-child {
-        display: block !important;
+        /* display: block !important; */
     }
     p.daragdsan {
         background-color: green;
