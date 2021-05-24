@@ -1,16 +1,24 @@
 /* 5/24 class */
-$(document).ready(function(){
-    $("p").click(function(){
-      $(this).hide();
-    });
+jQuery(document).ready(function(){
+	// jQuery("p").click(function(){
+	// 	jQuery(this).hide();
+	// });
 
-    
-    console.log('query document ready');
-  });
+	jQuery("p#the-child").click(
+		function(){
+			if(jQuery(this).hasClass('daragsan')) {
+				jQuery(this).removeClass('daragdsan');
+			} else {
+				jQuery(this).addClass('daragdsan');
+			}
+		}
+	);
+	console.log('query document ready');
+});
 
-
-
-
+function pthechildDaragdsan() {
+	console.log('p#the-child daragdsan');
+}
 
 
 

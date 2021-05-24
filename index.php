@@ -32,6 +32,9 @@
     </div>
     <style>
     /* css ornoo = cascading STYLE sheet*/
+    p#the-child {
+        display: block !important;
+    }
     </style>
     <script src="jquery.js"></script>
     <script src="main.js"></script>
