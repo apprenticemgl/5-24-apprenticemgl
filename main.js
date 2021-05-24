@@ -32,10 +32,33 @@ $(document).ready(function(){
 
 	$(".btn-link").click(function(){
 		$.get("data.txt", function(data, status){
-			alert("Data: " + data + "\nStatus: " + status);
+			$("#the-child").html(data);
+			console.log("Data: " + data + "\nStatus: " + status);
 		});
 	});
 
+	$("#success").click(function(){
+		var username = $("#nameinput").val();
+
+		if(username == '') {
+			// alert('ner xooson baina');
+			$("#the-child").html('ner xooson baina');
+			$("#the-child").css('color', 'red');
+			return;
+		}
+
+		$("#the-child").html('');
+		$("#the-child").css('color', 'black');
+
+		var data = {name: username};
+		$.post("post.php", data,
+			function(data, status){
+				console.log("Data: " + data + "\nStatus: " + status);
+
+				$("#nameinput").val("");
+			}
+		);
+	});
 });
 
 function pthechildDaragdsan() {
